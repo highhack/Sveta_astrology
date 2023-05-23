@@ -1,32 +1,29 @@
-import Heading from "../components/Heading";
 import s from './../styles/Home.module.scss'
 import Head from "next/head";
-import Socials from "../components/Socials/Socials";
-
-export const getStaticProps = async  () => {
-    const response = await fetch(`${process.env.API_HOST}/socials`)
-    const data =  await response.json()
-    debugger
-    if (!data) {
-        return {
-            notFound: true   // automaticaly redirect to 404
-        }
-    }
-    return {props: {socials: data}}
-}
+import Zodiac from "../components/Zodiac/Zodiac";
+import React, {useState} from "react";
+import Main from "../components/Main/Main";
+import SunMoonCircle from "../components/SunMoonCircle/SunMoonCircle";
+import NightPage from "../components/NightPage/NightPage";
+import SecondPage from "../components/SecondPage/SecondPage";
 
 
+const Home = () => {
 
-const  Home = ({socials}) =>  {
-  return (
-      <div className={s.wrapper}>
-          <Head>
-              <title>Home</title>
-          </Head>
-        <Heading  text={'Next Application'}/>
-        <Socials  socials={socials}/>
-      </div>
-  )
+    const [page, setPage] = useState('first-page')
+    return (
+        <div className={s.wrapper}>
+            <Main setPage={setPage}/>
+            {page === 'first-page' && <Zodiac/>}
+            {page === 'second-page' &&
+            <>
+                <SunMoonCircle/>
+                <SecondPage/>
+                <NightPage/>
+            </>
+            }
+        </div>
+    )
 }
 
 export default Home

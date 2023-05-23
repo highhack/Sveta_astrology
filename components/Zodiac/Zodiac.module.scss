@@ -1,0 +1,109 @@
+.zodiac_page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .zodiac {
+    position: relative;
+    .path {
+      position: absolute;
+      stroke: black;
+      stroke-width: 3;
+      stroke-dasharray: none;
+      stroke-linecap: butt;
+      stroke-dashoffset: 0;
+      stroke-linejoin: miter;
+      stroke-miterlimit: 4;
+      fill: rgb(255, 255, 255);
+      fill-opacity: 0;
+      fill-rule: nonzero;
+      opacity: 1;
+      color: blueviolet;
+    }
+    .aries {
+      position: absolute;
+      width: 200px;
+      opacity: 0.2;
+      top: 0px;
+      left: 40px;
+    }
+    .taurus {
+      position: absolute;
+      width: 200px;
+      opacity: 0.2;
+      top: 150px;
+      left: 400px;
+    }
+    .gemini {
+      position: absolute;
+      width: 200px;
+      opacity: 0.2;
+      top: 370px;
+      left: 720px;
+    }
+    .cancer {
+      position: absolute;
+      width: 200px;
+      opacity: 0.2;
+      top: 670px;
+      left: 720px;
+    }
+    .leo {
+      position: absolute;
+      width: 200px;
+      opacity: 0.2;
+      top: 970px;
+      left: 420px;
+    }
+    .virgo {
+      position: absolute;
+      width: 200px;
+      opacity: 0.2;
+      top: 1250px;
+      left: 60px;
+    }
+    .libra {
+      position: absolute;
+      width: 200px;
+      opacity: 0.2;
+      top: 1550px;
+      left: 20px;
+    }
+    .scorpio {
+      position: absolute;
+      width: 200px;
+      opacity: 0.2;
+      top: 1850px;
+      left: 340px;
+    }
+    .sagittarius {
+      position: absolute;
+      width: 200px;
+      opacity: 0.2;
+      top: 2300px;
+      left: 700px;
+    }
+    .capricorn {
+      position: absolute;
+      width: 200px;
+      opacity: 0.2;
+      top: 2850px;
+      left: 750px;
+    }
+    .aquarius {
+      position: absolute;
+      width: 200px;
+      opacity: 0.2;
+      top: 3050px;
+      left: 400px;
+    }
+    .pisces {
+      position: absolute;
+      width: 200px;
+      opacity: 0.2;
+      top: 3250px;
+      left: 70px;
+    }
+  }
+}
+

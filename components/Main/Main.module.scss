@@ -1,0 +1,76 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .scope {
+    width: 96%;
+    height: 96%;
+    border: black 1px solid;
+    .list {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      z-index: 20;
+    }
+
+
+    .astrologyCircle {
+      width: 300px;
+      margin: 60px auto auto auto;
+    }
+
+    .svitlana_goldin {
+      font-size: 32px;
+      width: 500px;
+     margin: 100px auto;
+    }
+
+
+    .photo:hover {
+      opacity: 0;
+    }
+
+    .photo1:hover {
+      opacity: 0;
+    }
+
+    .originPhoto {
+      .originPhotoContent {
+        border-radius: 20px;
+      }
+    }
+    .originPhoto1 {
+      .originPhotoContent1 {
+        border-radius: 20px;
+      }
+    }
+
+    .originPhoto, .photo {
+      width: 16%;
+      position: absolute;
+      bottom: 5%;
+      min-width: 400px;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out;
+    }
+    .originPhoto1, .photo1 {
+      width: 20%;
+      position: absolute;
+      right: 5%;
+      bottom: 5%;
+      min-width: 400px;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out;
+    }
+  }
+}
+
+

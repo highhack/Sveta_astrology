@@ -2,7 +2,8 @@ import s from './Navbar.module.scss'
 import Link from "next/link";
 import {useRouter} from "next/router";
 import Image from "next/image";
-import logo from './../../public/logo.png'
+// import logo from './../../public/logo.png';
+
 const navigation = [
     {id: 1, title:  'Home', path: '/'},
     {id: 2, title:  'Posts', path: '/posts'},
@@ -14,7 +15,7 @@ const Navbar = () => {
     return (
         <nav className={s.nav}>
             <div className={s.logo}>
-            <Image src={logo} width='60px' height='60px'/>
+            <Image src={'/logo.png'} width='60px' height='60px'/>
             </div>
             <div className={s.links}>
                 {navigation.map(({id, title, path}) => {
