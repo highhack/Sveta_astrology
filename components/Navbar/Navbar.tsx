@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <nav className={s.nav}>
             <div className={s.logo}>
-            <Image src={'/logo.png'} width='60px' height='60px'/>
+            <Image  alt='' src={'/logo.png'} width='60px' height='60px'/>
             </div>
             <div className={s.links}>
                 {navigation.map(({id, title, path}) => {

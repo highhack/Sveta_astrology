@@ -36,7 +36,6 @@ const  NightPage = () =>  {
         });
     };
     const shootingStars = () => {
-        debugger
         anime({
             targets: [".wish"],
             easing: "linear",
