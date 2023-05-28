@@ -1,19 +1,21 @@
 .second_page_block {
-  height: 400vh;
+  display: flex;
+  align-items: flex-end;
+  height: 500vh;
   width: 100%;
   background: linear-gradient(
-                  #ffffff,
-            //#dedbdb,
-            //#d9cad7,
-            //#b39bbc,
-            //#9c81a7,
-            //#98819b,
-            //#89518d,
-            //#915a90,
-            //#54336e,
-            //#3e193e,
-            //#341d31,
-            //#2d1b34,
-                  #2b2032
+    #ffffff,
+    // #dedbdb,
+    // #d9cad7,
+    // #b39bbc,
+    // #9c81a7,
+    // #98819b,
+    // #89518d,
+    // #915a90,
+    // #54336e,
+    // #3e193e,
+    // #341d31,
+    // #2d1b34,
+    #2b2032
   );
 }

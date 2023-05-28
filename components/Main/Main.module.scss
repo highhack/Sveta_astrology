@@ -17,18 +17,30 @@
       z-index: 20;
     }
 
-
     .astrologyCircle {
-      width: 300px;
-      margin: 60px auto auto auto;
+      position: absolute;
+      left: 45%;
+      top: 200px;
+    }
+    .astrologyCircleConternt {
+      width: 100%;
+      height: 100%;
     }
 
     .svitlana_goldin {
       font-size: 32px;
       width: 500px;
-     margin: 100px auto;
+      margin: 100px auto;
     }
 
+    .photoContent {
+      width: 100%;
+      height: 100%;
+    }
+    .photoContent1 {
+      width: 100%;
+      height: 100%;
+    }
 
     .photo:hover {
       opacity: 0;
@@ -41,16 +53,20 @@
     .originPhoto {
       .originPhotoContent {
         border-radius: 20px;
+        width: 100%;
+        height: 100%;
       }
     }
     .originPhoto1 {
       .originPhotoContent1 {
         border-radius: 20px;
+        width: 100%;
+        height: 100%;
       }
     }
 
-    .originPhoto, .photo {
-      width: 16%;
+    .originPhoto,
+    .photo {
       position: absolute;
       bottom: 5%;
       min-width: 400px;
@@ -59,7 +75,8 @@
       -o-transition: opacity 1s ease-in-out;
       transition: opacity 1s ease-in-out;
     }
-    .originPhoto1, .photo1 {
+    .originPhoto1,
+    .photo1 {
       width: 20%;
       position: absolute;
       right: 5%;
@@ -72,5 +89,3 @@
     }
   }
 }
-
-
