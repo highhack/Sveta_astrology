@@ -6,6 +6,7 @@ import astrologyCircle from "./../../public/images/astrologyCircle.png";
 import originPhoto from "./../../public/images/originPhoto.jpg";
 import originPhoto1 from "./../../public/images/originPhoto1.jpg";
 import Image from "next/image";
+import WallClock from "../WallClock/WallClock";
 
 const Main = ({ setPage }) => {
   return (
@@ -32,6 +33,7 @@ const Main = ({ setPage }) => {
         <div className={s.photo1}>
           <Image src={mainPhoto1} alt="" className={s.photoContent1} />
         </div>
+        <WallClock />
         <div className={s.astrologyCircle}>
           <Image
             src={astrologyCircle}
