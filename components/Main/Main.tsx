@@ -7,18 +7,25 @@ import originPhoto from "./../../public/images/originPhoto.jpg";
 import originPhoto1 from "./../../public/images/originPhoto1.jpg";
 import Image from "next/image";
 import WallClock from "../WallClock/WallClock";
+import Texts from "../Texts/Texts";
 
 const Main = ({ setPage }) => {
   return (
     <div className={s.main}>
       <div className={s.scope}>
         <div className={s.list}>
-          <div className={s.page_title} onClick={() => setPage("first-page")}>
+          <button
+            className={s.page_title}
+            onClick={() => setPage("first-page")}
+          >
             first
-          </div>
-          <div className={s.page_title} onClick={() => setPage("second-page")}>
+          </button>
+          <button
+            className={s.page_title}
+            onClick={() => setPage("second-page")}
+          >
             second
-          </div>
+          </button>
         </div>
         <div className={s.originPhoto}>
           <Image src={originPhoto} className={s.originPhotoContent} alt="" />
@@ -33,12 +40,12 @@ const Main = ({ setPage }) => {
         <div className={s.photo1}>
           <Image src={mainPhoto1} alt="" className={s.photoContent1} />
         </div>
-        <WallClock />
         <div className={s.astrologyCircle}>
+          <WallClock />
           <Image
             src={astrologyCircle}
             alt=""
-            className={s.astrologyCircleConternt}
+            className={s.astrologyCircleContent}
           />
         </div>
       </div>

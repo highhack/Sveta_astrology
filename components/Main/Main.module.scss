@@ -13,9 +13,20 @@
     border: black 1px solid;
     .list {
       position: absolute;
-      top: 40%;
-      left: 40%;
+      display: flex;
+      gap: 10px;
+      top: 60px;
+      right: 100px;
       z-index: 20;
+      .page_title {
+        border: 1px black solid;
+        padding: 2px;
+        width: 70px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     .astrologyCircle {
@@ -23,9 +34,13 @@
       left: 45%;
       top: 200px;
     }
-    .astrologyCircleConternt {
-      width: 100%;
-      height: 100%;
+    .astrologyCircleContent {
+      width: 340px;
+      height: 340px;
+      max-width: none;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
     .svitlana_goldin {
