@@ -7,7 +7,6 @@ import originPhoto from "./../../public/images/originPhoto.jpg";
 import originPhoto1 from "./../../public/images/originPhoto1.jpg";
 import Image from "next/image";
 import WallClock from "../WallClock/WallClock";
-import Texts from "../Texts/Texts";
 
 const Main = ({ setPage }) => {
   return (

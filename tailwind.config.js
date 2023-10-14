@@ -11,5 +11,14 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".content-attr": {
+          content: "attr(data-text)",
+        },
+      };
+      addUtilities(newUtilities, ["before"]);
+    },
+  ],
 };

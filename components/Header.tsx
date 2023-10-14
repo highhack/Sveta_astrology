@@ -1,4 +1,4 @@
-import Navbar from "../Navbar/Navbar";
+import Navbar from "./Navbar/Navbar";
 import { FC } from "react";
 
 const Header: FC = () => {

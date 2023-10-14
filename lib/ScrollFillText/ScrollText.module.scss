@@ -1,0 +1,9 @@
+.highlighted-text:before {
+  content: attr(data-text);
+}
+
+.highlighted-text {
+  color: #111;
+  transition: clip-path 0.5s ease;
+  text-shadow: 0 0 0 #111;
+}
