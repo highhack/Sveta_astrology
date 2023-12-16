@@ -26,7 +26,9 @@ const Main = ({ setPage }) => {
           </button>
         </div>
 
-        <div className="w-[500px] p-10 text-8">Svitlana Goldin</div>
+        <div className=" absolute top-[500px] left-[40%] w-[500px] p-10 text-8">
+          Svitlana Goldin
+        </div>
 
         <Image
           src={mainPhotoColor}
