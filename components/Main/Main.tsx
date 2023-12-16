@@ -30,7 +30,7 @@ const Main = ({ setPage }) => {
 
         <Image
           src={mainPhotoColor}
-          className="rounded-[20px] w-[450px] h-[650px] absolute right-10 bottom-10"
+          className="rounded-[20px] w-[400px] h-[550px] absolute left-10 bottom-10"
           alt=""
         />
 
@@ -43,7 +43,7 @@ const Main = ({ setPage }) => {
         <Image
           src={mainPhoto}
           alt=""
-          className="rounded-[20px] w-[450px] h-[650px] hover:opacity-0 hover:transition-opacity duration-1000 ease-in-out absolute right-10 bottom-10"
+          className="rounded-[20px] w-[400px] h-[550px] hover:opacity-0 hover:transition-opacity duration-1000 ease-in-out absolute left-10 bottom-10"
         />
 
         {/* <Image

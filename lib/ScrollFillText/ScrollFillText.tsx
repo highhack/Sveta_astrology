@@ -12,7 +12,7 @@ const ScrollFillText = ({ content }) => {
 
   const { scrollYProgress } = useScroll({
     target: contentRef,
-    offset: ["end center", "start start"],
+    offset: ["end 90vh", "start start"],
   });
 
   const scrollValue = useTransform(scrollYProgress, [0, 0.15], ["100%", "0%"]);

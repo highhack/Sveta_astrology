@@ -25,11 +25,11 @@ const PaintedZodiacsSVG = () => {
       const draw = length * scrollpercent;
 
       // Reverse the drawing (when scrolling upwards)
-      Path2.style.strokeDashoffset = (length - 1.5 * draw).toString();
+      Path2.style.strokeDashoffset = (length - 1.1 * draw).toString();
     }
   });
   return (
-    <svg width="1000" height="5000" viewBox="0 -50 1000 5000" className={s.svg}>
+    <svg width="1000" height="3500" viewBox="0 -50 1000 3500" className={s.svg}>
       <g transform="matrix(1 0 0 1 97.51 480.69)" id="lB7vav0uQdaRpKRnXqUjo">
         <path
           className={s.path}

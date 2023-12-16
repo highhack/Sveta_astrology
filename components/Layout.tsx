@@ -8,11 +8,11 @@ export type LayoutProps = {
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <>
+    <div className="relative">
       <Header />
       {children}
       <Footer />
-    </>
+    </div>
   );
 };
 
