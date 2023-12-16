@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const Header: FC = () => {
   return (
-    <header>
+    <header className="fixed top-10  left-10 z-[10]">
       <Navbar />
     </header>
   );
