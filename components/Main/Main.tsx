@@ -1,50 +1,63 @@
 import React from "react";
-import s from "./Main.module.scss";
 import mainPhoto from "./../../public/images/mainPhoto.jpg";
 import mainPhoto1 from "./../../public/images/mainPhoto1.png";
 import astrologyCircle from "./../../public/images/astrologyCircle.png";
-import originPhoto from "./../../public/images/originPhoto.jpg";
-import originPhoto1 from "./../../public/images/originPhoto1.jpg";
+import mainPhotoColor from "./../../public/images/mainPhotoColor.jpg";
+import mainPhotoColor1 from "./../../public/images/mainPhotoColor1.jpg";
 import Image from "next/image";
 import WallClock from "../WallClock/WallClock";
 
 const Main = ({ setPage }) => {
   return (
-    <div className={s.main}>
-      <div className={s.scope}>
-        <div className={s.list}>
+    <div className="w-full h-[100vh] p-5 relative flex justify-center items-center">
+      <div className="w-full h-full border-[1px] border-black">
+        <div className="absolute flex gap-[10px] top-[60px] right-[100px] z-[20]">
           <button
-            className={s.page_title}
+            className="border-[1px] border-black p-[2px] w-[70px] rounded-[15px] flex justify-center items-center"
             onClick={() => setPage("first-page")}
           >
             first
           </button>
           <button
-            className={s.page_title}
+            className="border-[1px] border-black p-[2px] w-[70px] rounded-[15px] flex justify-center items-center"
             onClick={() => setPage("second-page")}
           >
             second
           </button>
         </div>
-        <div className={s.originPhoto}>
-          <Image src={originPhoto} className={s.originPhotoContent} alt="" />
-        </div>
-        <div className={s.svitlana_goldin}>Svitlana Goldin</div>
-        <div className={s.photo}>
-          <Image src={mainPhoto} alt="" className={s.photoContent} />
-        </div>
-        <div className={s.originPhoto1}>
-          <Image alt="" src={originPhoto1} className={s.originPhotoContent1} />
-        </div>
-        <div className={s.photo1}>
-          <Image src={mainPhoto1} alt="" className={s.photoContent1} />
-        </div>
-        <div className={s.astrologyCircle}>
+
+        <div className="w-[500px] p-10 text-8">Svitlana Goldin</div>
+
+        <Image
+          src={mainPhotoColor}
+          className="rounded-[20px] w-[450px] h-[650px] absolute right-10 bottom-10"
+          alt=""
+        />
+
+        <Image
+          alt=""
+          src={mainPhotoColor1}
+          className="rounded-[20px] w-[450px] h-[650px]  absolute left-10 bottom-10 "
+        />
+
+        <Image
+          src={mainPhoto}
+          alt=""
+          className="rounded-[20px] w-[450px] h-[650px] hover:opacity-0 hover:transition-opacity duration-1000 ease-in-out absolute right-10 bottom-10"
+        />
+
+        <Image
+          src={mainPhoto1}
+          alt=""
+          className="rounded-[20px] w-[450px] h-[650px] hover:opacity-0 absolute left-10 bottom-10 hover:opacity-0 hover:transition-opacity duration-1000 ease-in-out"
+        />
+
+        <div className="absolute left-[45%] top-[200px]">
           <WallClock />
           <Image
             src={astrologyCircle}
             alt=""
-            className={s.astrologyCircleContent}
+            className="h-10 w-10 w-[340px] h-[340px] max-w-[none] absolute top-0 left-0"
           />
         </div>
       </div>

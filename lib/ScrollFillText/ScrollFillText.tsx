@@ -15,8 +15,6 @@ const ScrollFillText = ({ content }) => {
     offset: ["end center", "start start"],
   });
 
-  console.log("scrollYProgress", scrollYProgress);
-
   const scrollValue = useTransform(scrollYProgress, [0, 0.15], ["100%", "0%"]);
   const clipPathVal = useMotionTemplate`inset(0% ${scrollValue} 0% 0%)`;
 

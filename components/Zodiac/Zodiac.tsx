@@ -5,13 +5,10 @@ import Texts from "../Texts/Texts";
 import { zodiacs } from "../../constants/zodiacs";
 import { texts } from "../../constants/texts";
 import PaintedZodiacSVG from "./PaintedZodiacSVG";
-import { ScrollText } from "../../lib/ScrollText/ScrollText";
 
 const Zodiac = React.memo(function Zodiac() {
   const targetRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-
-  console.log("isVisible", isVisible);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -20,8 +17,6 @@ const Zodiac = React.memo(function Zodiac() {
       },
       { threshold: 0.5 } // You can adjust the threshold as needed
     );
-
-    console.log("observer", observer);
 
     if (targetRef.current) {
       observer.observe(targetRef.current);
@@ -42,7 +37,6 @@ const Zodiac = React.memo(function Zodiac() {
             !isVisible && (
               <div
                 key={id}
-                // ref={targetRef}
                 className={s["centered-text"]}
                 style={{
                   top: `${top}px`,
@@ -52,7 +46,6 @@ const Zodiac = React.memo(function Zodiac() {
               >
                 <div className={s["text-content"]}>
                   <Texts textData={text} />
-                  {/* <ScrollText content={text} /> */}
                 </div>
               </div>
             )
@@ -63,7 +56,7 @@ const Zodiac = React.memo(function Zodiac() {
               <Image
                 width={200}
                 height={200}
-                src={`/../public/images/${zo.image}.png`}
+                src={`/images/${zo.image}.png`}
                 alt=""
               />
             </div>
