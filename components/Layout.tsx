@@ -9,9 +9,9 @@ export type LayoutProps = {
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      {/*<Header/>*/}
+      <Header />
       {children}
-      {/*<Footer/>*/}
+      <Footer />
     </>
   );
 };

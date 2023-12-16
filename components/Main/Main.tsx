@@ -10,7 +10,7 @@ import WallClock from "../WallClock/WallClock";
 const Main = ({ setPage }) => {
   return (
     <div className="w-full h-[100vh] p-5 relative flex justify-center items-center">
-      <div className="w-full h-full border-[1px] border-black">
+      <div className="w-full h-full border-[2px] border-black rounded-[10px]">
         <div className="absolute flex gap-[10px] top-[60px] right-[100px] z-[20]">
           <button
             className="border-[1px] border-black p-[2px] w-[70px] rounded-[15px] flex justify-center items-center"
@@ -34,11 +34,11 @@ const Main = ({ setPage }) => {
           alt=""
         />
 
-        <Image
+        {/* <Image
           alt=""
           src={mainPhotoColor1}
           className="rounded-[20px] w-[450px] h-[650px]  absolute left-10 bottom-10 "
-        />
+        /> */}
 
         <Image
           src={mainPhoto}
@@ -46,11 +46,11 @@ const Main = ({ setPage }) => {
           className="rounded-[20px] w-[450px] h-[650px] hover:opacity-0 hover:transition-opacity duration-1000 ease-in-out absolute right-10 bottom-10"
         />
 
-        <Image
+        {/* <Image
           src={mainPhoto1}
           alt=""
           className="rounded-[20px] w-[450px] h-[650px] hover:opacity-0 absolute left-10 bottom-10 hover:opacity-0 hover:transition-opacity duration-1000 ease-in-out"
-        />
+        /> */}
 
         <div className="absolute left-[45%] top-[200px]">
           <WallClock />

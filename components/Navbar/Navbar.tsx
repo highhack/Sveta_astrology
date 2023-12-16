@@ -14,14 +14,20 @@ const Navbar = () => {
   const { asPath } = useRouter();
   return (
     <nav className={s.nav}>
-      <div className={s.logo}>
-        <Image alt="" src={"/logo.png"} />
-      </div>
+      {/* <div className={s.logo}> */}
+      <Image
+        alt=""
+        src={"/logo.png"}
+        className="w-10 h-5"
+        width={20}
+        height={20}
+      />
+      {/* </div> */}
       <div className={s.links}>
         {navigation.map(({ id, title, path }) => {
           return (
             <Link key={id} href={path}>
-              <a className={asPath === path ? s.active : s.link}>{title}</a>
+              <div className={asPath === path ? s.active : s.link}>{title}</div>
             </Link>
           );
         })}
