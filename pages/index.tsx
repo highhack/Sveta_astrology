@@ -12,11 +12,11 @@ const Home = () => {
   const [page, setPage] = useState("first-page");
   return (
     <div>
-      <Element name="Home" id="Home">
+      <Element name="Home">
         <Main setPage={setPage} />
       </Element>
       {page === "first-page" && (
-        <Element name="Zodiacs" id="Zodiacs">
+        <Element name="Zodiacs">
           <Zodiac />
         </Element>
       )}

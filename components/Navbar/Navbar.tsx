@@ -1,10 +1,8 @@
 import s from "./Navbar.module.scss";
-import { useRouter } from "next/router";
-import Image from "next/image";
 import clsx from "clsx";
-import { Events, Link, animateScroll as scroll, scrollSpy } from "react-scroll";
-import { useEffect, useState } from "react";
-// import logo from './../../public/logo.png';
+import { Link } from "react-scroll";
+import { useState } from "react";
+import { useRouter } from "next/router";
 
 const navigation = [
   { id: 1, title: "Home" },
@@ -15,8 +13,11 @@ const navigation = [
 const Navbar = () => {
   const [activeNav, setActiveNav] = useState("Home");
 
+  const router = useRouter();
+
   const handleSetActive = (to: string) => {
     setActiveNav(to);
+    // router.push(to);
   };
   return (
     <nav className="h-[100px] w-[300px] flex group ">
@@ -35,9 +36,9 @@ const Navbar = () => {
             >
               <div
                 className={clsx(
-                  "flex flex-around relative before:absolute before:bg-[#d063d0] before:w-10 before:h-2 before:bottom-2 before:z-[-1] before:rounded-[50px]",
+                  "flex flex-around relative before:absolute before:bg-[#d063d0] before:w-10 before:h-2 before:bottom-2 before:z-[-1] before:rounded-[50px] transition-all duration-500 delay-100 ease-in-out",
                   {
-                    "before:w-20 !text-[28px] !font-bold": activeNav === title,
+                    "before:w-20 text-[28px] font-bold": activeNav === title,
                   }
                 )}
               >
