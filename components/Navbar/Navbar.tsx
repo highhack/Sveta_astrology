@@ -25,6 +25,7 @@ const Navbar = () => {
         {navigation.map(({ id, title }) => {
           return (
             <Link
+              role="button"
               key={id}
               to={title}
               smooth={true}
@@ -36,7 +37,7 @@ const Navbar = () => {
             >
               <div
                 className={clsx(
-                  "flex flex-around relative before:absolute before:bg-[#d063d0] before:w-10 before:h-2 before:bottom-2 before:z-[-1] before:rounded-[50px] transition-all duration-500 delay-100 ease-in-out",
+                  "flex flex-around relative before:absolute before:bg-[#d063d0] before:w-10 before:h-2 before:bottom-2 before:z-[-1] before:rounded-[50px] transition-all before:transition-all duration-700  ease-in-out",
                   {
                     "before:w-20 text-[28px] font-bold": activeNav === title,
                   }
