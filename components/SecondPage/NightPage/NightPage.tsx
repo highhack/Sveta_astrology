@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import s from "./NightPage.module.scss";
 import Image from "next/image";
-import floresta from "./../../../public/images/floresta.png";
+import floresta from "/public/images/floresta.png";
 import anime from "animejs";
 
 const NightPage = () => {

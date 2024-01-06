@@ -1,9 +1,9 @@
 import React from "react";
-import mainPhoto from "./../../public/images/mainPhoto.jpg";
-import mainPhoto1 from "./../../public/images/mainPhoto1.png";
-import astrologyCircle from "./../../public/images/astrologyCircle.png";
-import mainPhotoColor from "./../../public/images/mainPhotoColor.jpg";
-import mainPhotoColor1 from "./../../public/images/mainPhotoColor1.jpg";
+import mainPhoto from "/public/images/mainPhoto.jpg";
+import mainPhoto1 from "/public/images/mainPhoto1.png";
+import astrologyCircle from "/public/images/astrologyCircle.png";
+import mainPhotoColor from "/public/images/mainPhotoColor.jpg";
+import mainPhotoColor1 from "/public/images/mainPhotoColor1.jpg";
 import Image from "next/image";
 import WallClock from "../WallClock/WallClock";
 
@@ -59,7 +59,7 @@ const Main = ({ setPage }) => {
           <Image
             src={astrologyCircle}
             alt=""
-            className="h-10 w-10 w-[340px] h-[340px] max-w-[none] absolute top-0 left-0"
+            className="h-10  w-[340px] max-w-[none] absolute top-0 left-0"
           />
         </div>
       </div>

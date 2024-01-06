@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import s from "./SunMoonCircle.module.scss";
 import Image from "next/image";
-import sun from "./../../public/images/sun1.png";
-import moon from "./../../public/images/moon.png";
+import sun from "/public/images/sun1.png";
+import moon from "/public/images/moon.png";
 
 const SunMoonCircle = () => {
   useEffect(() => {

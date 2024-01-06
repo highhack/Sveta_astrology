@@ -14,7 +14,7 @@ const Footer: FC = () => {
         />
         <Image
           alt=""
-          src={"/logo.png"}
+          src={"/public/logo.png"}
           className="w-8 h-3"
           width={20}
           height={20}

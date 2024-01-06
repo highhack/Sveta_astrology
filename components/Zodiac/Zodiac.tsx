@@ -56,7 +56,7 @@ const Zodiac = React.memo(function Zodiac() {
               <Image
                 width={200}
                 height={200}
-                src={`/images/${zo.image}.svg`}
+                src={`/public/images/${zo.image}.svg`}
                 alt=""
               />
             </div>
